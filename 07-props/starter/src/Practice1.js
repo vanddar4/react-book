@@ -2,13 +2,14 @@ import React from "react";
 
 const Practice1 = () => {
   const id = 1;
-  const username = "zgordon";
+  const username = "vanddar4";
   return (
     <div className="practice">
       {/* 
         1.Pass the id and username into <User /> as props 
-      */}
-      <User />
+      */
+      }
+      <User id={id} username={username} />
     </div>
   );
 };

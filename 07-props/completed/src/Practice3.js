@@ -20,8 +20,8 @@ const Practice3 = () => {
 */
 const Post = props => (
   <article className="post">
-    <Heading title={props.title} />
-    <Byline author={props.author} />
+    <Heading title= {props.title} />
+    <Byline author= {props.author} />
   </article>
 );
 
