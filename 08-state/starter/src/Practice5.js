@@ -13,15 +13,15 @@ const Button = props => <button onClick={props.onClick}>{props.text}</button>;
 
 class Practice5 extends React.Component {
   state = {
-    count: 0
+    count: 1
   };
 
   increment = () => {
-    this.setState({ count: this.state.count + 1 });
+    this.setState({ count: this.state.count + 2 });
   };
 
   decrement = () => {
-    this.setState({ count: this.state.count - 1 });
+    this.setState({ count: this.state.count - 2 });
   };
 
   reset = () => {

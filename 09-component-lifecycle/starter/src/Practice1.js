@@ -4,7 +4,7 @@ const Practice1 = () => <Header sitename="React Explained" />;
 
 class Header extends React.Component {
   state = {
-    username: "defaultusername"
+    username: "newuser"
   };
   /* 
     1. Call static getDerivedStateFromProps(props, state) {}
@@ -12,6 +12,14 @@ class Header extends React.Component {
     3. Then create a newState object where you override the current username
     4. Return the newState
   */
+ static getDerivedStateFromProps(props, state) {
+   console.log("Props", props);
+   console.log("State", state);
+   const newState = {
+     username:"vanddar"
+   }
+   return newState
+ }
   render() {
     return (
       <header>
